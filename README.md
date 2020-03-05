@@ -4,7 +4,7 @@
 
 ## VGG16 순서도
 
-![VGG16순서도](/image_file/VGG16순서도.png)
+(/image_file/VGG16순서도.png)
 
 ****
 
@@ -145,4 +145,4 @@ print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 
 ## 결과
 
-![결과](/image_file/결과.png)
+(/image_file/결과.png)

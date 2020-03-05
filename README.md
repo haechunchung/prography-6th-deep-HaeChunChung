@@ -161,4 +161,3 @@ print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 
 ## 결과
 
-![결과](https://user-images.githubusercontent.com/46519866/75959516-bf75dd00-5f01-11ea-82a9-ed212a321712.png)

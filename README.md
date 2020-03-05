@@ -4,7 +4,7 @@
 
 ## VGG16 순서도
 
-(/image_file/VGG16순서도.png)
+![VGG16순서도](/image_file/VGG16순서도.png)
 
 ****
 

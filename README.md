@@ -145,4 +145,4 @@ print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 
 ## 결과
 
-(/image_file/결과.png)
+![결과](/image_file/결과.png)

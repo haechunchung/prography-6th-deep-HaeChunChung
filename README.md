@@ -2,6 +2,12 @@
 
 ****
 
+## 문제
+
+![문제](https://user-images.githubusercontent.com/46519866/75966954-71b3a180-5f0e-11ea-82ad-6050b2b05c8b.png)
+
+****
+
 ## VGG16 순서도
 
 ![VGG16순서도](https://user-images.githubusercontent.com/46519866/75961526-86d80280-5f05-11ea-9585-4dc747d954d1.png)

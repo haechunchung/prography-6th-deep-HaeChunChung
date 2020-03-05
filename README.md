@@ -4,7 +4,7 @@
 
 ## VGG16 순서도
 
-
+![VGG16순서도](https://user-images.githubusercontent.com/46519866/75960817-23010a00-5f04-11ea-8446-be96b372e357.png)
 
 ****
 

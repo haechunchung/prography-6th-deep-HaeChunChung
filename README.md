@@ -149,8 +149,8 @@ print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 3. 위의 순서도에 따라 VGG16을 진행한다.
 <br> 3-1) Conv 3-1에서 W, H의 사이즈를 조절하기 위해, 첫 번째 Convolution을 3x3 Conv(stride=2, padding=1)로 설정하였다.
 <br> 3-2) Skip Connection 구현 부분
-* Conv 2-1의 입력인 64x14x14를 1x1 Conv(stride=1, padding=0)을 통과시켜 32x14x14로 변환.
-* 32x14x14를 5x5 AvgPooling(stride=3, padding=0)을 통과시켜 32x4x4로 변환.
+<br> - Conv 2-1의 입력인 64x14x14를 1x1 Conv(stride=1, padding=0)을 통과시켜 32x14x14로 변환.
+<br> - 32x14x14를 5x5 AvgPooling(stride=3, padding=0)을 통과시켜 32x4x4로 변환.
 4. 나머지는 기존 VGG16과 동일
 
 ****

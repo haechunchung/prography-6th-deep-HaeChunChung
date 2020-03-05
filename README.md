@@ -4,8 +4,7 @@
 
 ## VGG16 순서도
 
-![VGG16순서도](/image_file/VGG16순서도.png)
-
+![VGG16순서도](https://user-images.githubusercontent.com/46519866/75959374-758cf700-5f01-11ea-8ce9-88894b7649df.png)
 ****
 
 ## 코드(test.py)

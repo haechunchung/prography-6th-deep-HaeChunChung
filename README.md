@@ -6,11 +6,7 @@
 
 ****
 
-![VGG16순서도](/image_file/VGG16순서도.png)
-
 ## 코드
-
-****
 
 ```Python
 import torch
@@ -143,8 +139,6 @@ test_loss, test_accuracy = inference(model, test_set)
 print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 ```
 
-## 결과
-
 ****
 
-![결과](/image_file/결과.png)
+## 결과

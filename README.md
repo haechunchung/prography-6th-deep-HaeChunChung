@@ -146,6 +146,8 @@ print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 
 ## 코드 설명
 
+* 학습시 epochs=5, batch_size=1000, learning_rate=0.001로 설정하였다.
+
 1. MNIST 데이터를 dataset형태로 받아온다.
 2. Preprocess 클래스에서 Dataset을 상속받아 오버라이드하여 MNIST 데이터를 전처리해준다.(1x24x24 -> 3x24x24)
 3. 위의 순서도에 따라 VGG16을 진행한다.

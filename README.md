@@ -4,7 +4,7 @@
 
 ## VGG16 순서도
 
-![VGG16순서도](https://user-images.githubusercontent.com/46519866/75960817-23010a00-5f04-11ea-8446-be96b372e357.png)
+
 
 ****
 
@@ -147,8 +147,11 @@ print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 1. MNIST 데이터를 dataset형태로 받아온다.
 2. Preprocess 클래스에서 Dataset을 상속받아 오버라이드하여 MNIST 데이터를 전처리해준다.(1*24*24 -> 3*24*24)
 3. 위의 순서도에 따라 VGG16을 진행한다.
-<br> 3-1) Conv 3-1에서 W, H의 사이즈를 조절하기 위해, 첫 번째 Conv를 3x3 사이즈에 stride=2, padding=1로 설정하였다.
-<br> 3-2)
+<br> 3-1) Conv 3-1에서 W, H의 사이즈를 조절하기 위해, 첫 번째 Convolution을 3x3 Conv(stride=2, padding=1)로 설정하였다.
+<br> 3-2) Skip Connection 구현 부분
+<br> * Conv 2-1의 입력인 64*14*14를 1x1 Conv(stride=1, padding=0)을 통과시켜 32*14*14로 변환.
+<br> * 32*14*14를 5x5 AvgPooling(stride=3, padding=0)을 통과시켜 32*4*4로 변환.
+4. 나머지는 기존 VGG16과 동일
 
 ****
 

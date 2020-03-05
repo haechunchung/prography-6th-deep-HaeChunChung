@@ -4,7 +4,8 @@
 
 ## VGG16 순서도
 
-![VGG16순서도](https://user-images.githubusercontent.com/46519866/75959374-758cf700-5f01-11ea-8ce9-88894b7649df.png)
+
+
 ****
 
 ## 코드(test.py)
@@ -25,6 +26,7 @@ batch_size = 1000
 mnist_test = torchvision.datasets.MNIST(root="MNIST_data/", train=False, transform=torchvision.transforms.ToTensor(),
                                         download=True)
 
+# MNIST 데이터 1*24*24를 3*24*24로 변환
 class Preprocess(Dataset):
     def __init__(self):
         self.x_data = []
@@ -139,6 +141,14 @@ test_loss, test_accuracy = inference(model, test_set)
 
 print('Test Loss: {:.4f}, Accuracy: {:.2f}%'.format(test_loss, test_accuracy))
 ```
+
+****
+
+1. MNIST 데이터를 dataset형태로 받아온다.
+<br> 2. Preprocess 클래스에서 Dataset을 상속받아 오버라이드하여 MNIST 데이터를 전처리해준다.(1*24*24 -> 3*24*24)
+<br> 3. 위의 순서도에 따라 VGG16을 진행한다.
+<br> 3-1) Conv 3-1에서 W, H의 사이즈를 조절하기 위해, 첫 번째 Conv를 3x3 사이즈에 stride=2, padding=1로 설정하였다.
+<br> 3-2)
 
 ****
 
